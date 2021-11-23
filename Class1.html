@@ -1,0 +1,99 @@
+Hello there Varsha!
+
+<ol>
+
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+    <li>Fourth Item</li>
+
+</ol>
+
+<ul>
+
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+    <li>Fourth Item</li>
+
+    </ol>
+
+    <h1>HELLO WORLD!</h1>
+    <h2>HELLO WORLD!</h1>
+        <h3>HELLO WORLD!</h1>
+            <h4>HELLO WORLD!</h1>
+                <h5>HELLO WORLD!</h1>
+                    <h6>HELLO WORLD!</h1>
+
+                        <label>Employee Name:</label>
+                        <input type="text">
+                        <br>
+                        <br>
+
+                        <label>Date of Birth: </label>
+                        <input type="date"><br><br>
+                        <button>Submit</button>
+
+                        <br><br><br><br> <br>
+                        <label>Name:</label>
+                        <input type="text" id="myname">
+                        <br><br><label>Date of Birth:</label>
+                        <input type="date" id="birthday"> <br>
+                        <h3 id="answer"></h3>
+
+                        <script>
+                            function myfunction() {
+                                const myName = document.getElementById('myname').value
+                                const myBirthYear = document.getElementById('birthday').value
+                                const age = new Date().getYear() - new Date(myBirthYear).getYear()
+                                const answer = `${myName} is ${age} Years old`
+                                document.getElementById('answer').innerHTML = answer
+                            }
+                        </script>
+                        <br><button onclick="myfunction()">Calculate Age</button>
+                        <br>
+                        <br><br>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Person</th>
+                                    <th>Age</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Chris</td>
+                                    <td>38</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Dennis</td>
+                                    <td>45</td>
+                                </tr>
+                                <tr>
+                                    <td>Sarah</td>
+                                    <td>29</td>
+                                </tr>
+                                <tr>
+                                    <td>Damon</td>
+                                    <td>30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <style>
+                            table,
+                           th{
+                               border:5px solid rgb(83, 34, 139);
+                            border-collapse: collapse;
+                        };
+                           
+                           </style>
+                           <style>
+                
+                            td {
+                                border: 5px solid rgb(29, 187, 168);
+                                border-collapse: collapse;
+                                padding: 20px
+                            }
+                        </style> 

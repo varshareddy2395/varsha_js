@@ -1,0 +1,38 @@
+<h1> Students Attendence</h1>
+
+<table>
+    <div type="output"></div>
+    <thead>
+        <tr>
+            <th>No.</th>
+        <th>Name</th>
+        <th>Is Present?</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr><td>1</td><td>Varsha</td><td><input type="checkbox" ></td></tr>
+    <tr><td>2</td><td> Pavithra</td><td><input type="checkbox" ></td></tr> 
+    <tr><td>3</td><td> Divya </td><td><input type="checkbox" ></td></tr>
+    <tr><td>4</td> <td> Apurva</td> <td><input type="checkbox" ></td></tr>
+    <tr><td>5</td> <td> Anna</td> <td><input type="checkbox" ></td></tr>
+    <tr><td>6</td> <td> Rk</td> <td><input type="checkbox" ></td></tr>
+</tbody>
+</table> 
+<h3 id="answer"></h3>
+<style>
+    th,td
+    {
+        border-bottom:2px dashed rgb(11, 15, 11); padding: 5px;}
+        #answer { color: green}
+</style>
+
+<script>
+function markAttendence(){
+    const present = document.querySelectorAll('input:checked').length
+    const numOfStudents = document.querySelectorAll('input').length
+
+    const percentage = 100* (present/numOfStudents)
+    document.getElementById('answer').innerHTML = `${percentage.toFixed(1)}% is present`
+}
+</script>
+<button onclick="markAttendence()"> Mark Attendence</button>

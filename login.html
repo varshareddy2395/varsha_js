@@ -1,0 +1,42 @@
+<center>
+    <img src = "" width = "100">
+
+    <h2>Please login :)</h2>
+Username
+<input type="text" id="username"/> <br>
+<br>
+Password
+<input type="password" id="password"/>
+<br>
+<br>
+<button onclick="login()">Login</button>
+<h3 id="output"></h3> 
+</center>
+
+<script>
+    function login(){
+        const username = document.getElementById('username').value
+        const password = document.getElementById('password').value
+        const output = document.getElementById('output')
+        if (username == 'admin' && password == 'admin123'){
+            
+           output.innerHTML = 'Access granted'
+           output.innerHTML = 'green'
+           
+    }
+
+        else
+    {
+        output.innerHTML = 'Access denied'
+        output.innerHTML = 'red'
+    }
+    }
+    </script>
+    <style>
+center {
+    background-color: rgb(197, 140, 180);
+    padding: 40px;
+    border-radius: 30px;
+    border-style:solid;
+}
+    </style>

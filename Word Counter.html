@@ -1,0 +1,12 @@
+<h1>Word counter</h1>
+<h2 id="chars"></h2>
+<h1 id="words"></h1>
+<textarea id= "input1" oninput= "count()" rows='15' cols ='15'></textarea>
+<script>
+    function count(){
+    const input1 = document.getElementById('input1').value
+   
+      document.getElementById('chars').innerHTML=input1.split(' ').length 
+      document.getElementById('words').innerHTML=input1.length 
+    }
+</script>
